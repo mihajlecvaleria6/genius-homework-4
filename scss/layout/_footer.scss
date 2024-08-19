@@ -1,0 +1,91 @@
+.footer {
+  position: relative;
+  padding: 56px 0;
+  background-color: var(--color-primary-dark);
+  background-image: url('../images/footer-section-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      background-image: url('../images/medicene.png');
+      background-repeat: no-repeat;
+      width: 250px;
+      height: 150px;
+      bottom: 0;
+      right: 0;
+      content: '';
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__nav,
+  &__address {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+      text-align: left;
+    }
+  }
+
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+  }
+
+  &__list,
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__link {
+    color: var(--color-brand);
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-primary-light);
+    }
+  }
+
+  &__icon {
+    fill: var(--color-brand);
+
+    &:hover {
+      fill: var(--color-primary-light);
+    }
+  }
+
+  .address-link {
+    color: var(--color-brand);
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .address-link:hover {
+    color: var(--color-primary-light);
+  }
+
+  .address-copyright {
+    color: var(--color-secondary-light);
+    font-size: 13px;
+  }
+}

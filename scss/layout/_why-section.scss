@@ -1,0 +1,24 @@
+.why-section {
+  position: relative;
+  padding: 88px 0 48px 0;
+
+  &__title {
+    text-align: center;
+    margin: 0 auto 48px auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 56px;
+    }
+  }
+
+  &__item {
+    flex-basis: calc((100% - 112px) / 3);
+  }
+}

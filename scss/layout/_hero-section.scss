@@ -1,0 +1,73 @@
+.hero-section {
+  padding: 166px 0 126px 0;
+  background-image: url('../images/фон-1x.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+
+  @media (min-device-pixe-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 29ppx) {
+    background-image: url('../images/фон-2x.png');
+  }
+
+  &__text-title {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    color: var(--color-primary-light);
+    font-family: 'Play', sans-serif;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 0.8;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+      font-size: 140px;
+      margin-bottom: 40px;
+      max-width: 529px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.6;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 8px;
+    font-weight: 600;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 16px 32px;
+      margin: 0 0 16px;
+      border: 2px solid var(--color-primary-light);
+      border-radius: 32px;
+    }
+  }
+}

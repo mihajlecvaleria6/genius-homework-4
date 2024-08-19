@@ -1,0 +1,91 @@
+.button {
+  margin-bottom: 16px;
+  color: var(--color-brand);
+  padding: 16px 32px;
+  font-weight: 600;
+  background-color: var(--color-primary-light);
+  border: 2px solid var(--color-primary-light);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+}
+
+// .btn {
+//   margin-bottom: 16px;
+//   padding: 16px 32px;
+//   font-weight: 600;
+//   border: none;
+//   outline: none;
+//   color: var(--color-brand);
+//   cursor: pointer;
+//   position: relative;
+//   z-index: 0;
+//   border-radius: 32px;
+// }
+
+// .btn::after {
+//   content: '';
+//   z-index: -1;
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   background-color: var(--color-primary-light);
+//   left: 0;
+//   top: 0;
+//   border-radius: 30px;
+// }
+
+// .btn::before {
+//   content: '';
+//   background: linear-gradient(
+//     45deg,
+//     white,
+//     #0084d4,
+//     #00ffef,
+//     #82eefd,
+//     #1e90ff,
+//     #00ffef,
+//     white
+//   );
+//   position: absolute;
+//   top: -2px;
+//   left: -2px;
+//   background-size: 600%;
+//   width: calc(100% + 4px);
+//   height: calc(100% + 4px);
+//   z-index: -1;
+//   filter: blur(8px);
+//   animation: glowing 20s linear infinite;
+//   transition: opacity 0.3s ease-in-out;
+//   border-radius: 30px;
+//   opacity: 1;
+// }
+
+// @keyframes glowing {
+//   0% {
+//     background-position: 0 0;
+//   }
+//   50% {
+//     background-position: 400% 0;
+//   }
+//   100% {
+//     background-position: 0 0;
+//   }
+// }
+
+// .btn:hover::before {
+//   opacity: 1;
+// }
+
+// .btn:active:after {
+//   background: transparent;
+// }
+
+// .btn:active {
+//   color: var(--color-brand);
+//   font-weight: bold;
+// }
